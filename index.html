@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Персональный журнал-лавстори — уникальный подарок на годовщину. Расскажите вашу историю любви в формате роскошного печатного журнала.">
+  <title>Love Story Journal — Ваша история любви в формате журнала</title>
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true" style="display:inline-block;vertical-align:middle;margin-right:8px;">
+          <path d="M14 5C11 2 6 2 4 5.5C2 9 4 13 14 23C24 13 26 9 24 5.5C22 2 17 2 14 5Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <line x1="14" y1="12" x2="14" y2="19" stroke="currentColor" stroke-width="1"/>
+          <line x1="11" y1="15" x2="17" y2="15" stroke="currentColor" stroke-width="1"/>
+        </svg>
+        Love Story
+      </a>
+      <nav>
+        <ul class="header__nav" role="list">
+          <li><a href="#portfolio">Примеры</a></li>
+          <li><a href="#pricing">Тарифы</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+          <li><a href="#order">Заказать</a></li>
+        </ul>
+      </nav>
+      <div class="header__actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Переключить тему">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Открыть меню" onclick="document.querySelector('.mobile-nav').classList.toggle('is-open')">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav">
+    <a href="#portfolio" onclick="this.parentElement.classList.remove('is-open')">Примеры</a>
+    <a href="#pricing" onclick="this.parentElement.classList.remove('is-open')">Тарифы</a>
+    <a href="#reviews" onclick="this.parentElement.classList.remove('is-open')">Отзывы</a>
+    <a href="#order" onclick="this.parentElement.classList.remove('is-open')">Заказать</a>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero__bg">
+      <img src="./assets/hero.jpg" alt="Журнал лавстори на столе с цветами" width="1456" height="816" fetchpriority="high">
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="container hero__content">
+      <p class="hero__badge">Персональный журнал</p>
+      <h1 class="hero__title">Ваша история любви<br>в формате <em>журнала</em></h1>
+      <p class="hero__subtitle">Создаём уникальные печатные журналы с вашей историей — от первой встречи до самых ярких моментов вместе. Идеальный подарок на годовщину.</p>
+      <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;">
+        <a href="#order" class="btn btn--primary">Заказать журнал</a>
+        <a href="#portfolio" class="btn btn--outline">Смотреть примеры</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== HOW IT WORKS ========== -->
+  <section class="section features" id="features">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">Как это работает</p>
+        <h2 class="section__title">Три простых шага</h2>
+        <p class="section__subtitle">От заполнения анкеты до готового журнала в ваших руках — процесс, который приносит удовольствие.</p>
+      </div>
+      <div class="features__grid">
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>
+          </div>
+          <h3 class="feature-card__title">Расскажите историю</h3>
+          <p class="feature-card__desc">Заполните анкету и отправьте ваши любимые фотографии. Расскажите о знакомстве, первом свидании и моментах, которые дороги.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+          </div>
+          <h3 class="feature-card__title">Мы создаём дизайн</h3>
+          <p class="feature-card__desc">Наш дизайнер оформит журнал с вниманием к каждой детали — от обложки до последнего разворота. Вы утверждаете макет.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="m16 8 5 3-5 3V8Z" fill="none"/><path d="M7 22h10"/><path d="M12 17v5"/></svg>
+          </div>
+          <h3 class="feature-card__title">Получаете журнал</h3>
+          <p class="feature-card__desc">Печатаем на премиальной бумаге и доставляем в красивой упаковке. Готовый журнал — в ваших руках через 10–14 дней.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider" aria-hidden="true">
+    <span class="divider__line"></span>
+    <span class="divider__icon">♥</span>
+    <span class="divider__line"></span>
+  </div>
+
+  <!-- ========== PORTFOLIO ========== -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">Примеры работ</p>
+        <h2 class="section__title">Каждая история уникальна</h2>
+        <p class="section__subtitle">Посмотрите журналы, которые мы создали для наших клиентов.</p>
+      </div>
+      <div class="portfolio__grid">
+        <div class="portfolio__item reveal">
+          <img src="./assets/portfolio1.jpg" alt="Журнал Love Story — обложка" width="768" height="1024" loading="lazy">
+          <div class="portfolio__item__overlay">
+            <div class="portfolio__item__caption">
+              <h3>Анна и Дмитрий</h3>
+              <p>5 лет вместе · 48 страниц</p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__item reveal">
+          <img src="./assets/portfolio2.jpg" alt="Открытый журнал лавстори" width="768" height="1024" loading="lazy">
+          <div class="portfolio__item__overlay">
+            <div class="portfolio__item__caption">
+              <h3>Мария и Алексей</h3>
+              <p>Годовщина свадьбы · 32 страницы</p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio__item reveal">
+          <img src="./assets/portfolio3.jpg" alt="Стопка журналов лавстори" width="768" height="1024" loading="lazy">
+          <div class="portfolio__item__overlay">
+            <div class="portfolio__item__caption">
+              <h3>Коллекция</h3>
+              <p>Разные стили оформления</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRICING ========== -->
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">Тарифы</p>
+        <h2 class="section__title">Выберите ваш формат</h2>
+        <p class="section__subtitle">Три пакета на любой бюджет. Каждый включает индивидуальный дизайн и печать на премиальной бумаге.</p>
+      </div>
+      <div class="pricing__grid">
+        <div class="pricing-card reveal">
+          <h3 class="pricing-card__name">Нежность</h3>
+          <p class="pricing-card__price">4 900 ₽ <span>/ журнал</span></p>
+          <ul class="pricing-card__features" role="list">
+            <li>24 страницы</li>
+            <li>До 30 фотографий</li>
+            <li>Индивидуальный дизайн обложки</li>
+            <li>Матовая бумага 170 г/м²</li>
+            <li>Доставка по России</li>
+          </ul>
+          <a href="#order" class="btn btn--outline" style="width:100%;">Выбрать</a>
+        </div>
+        <div class="pricing-card pricing-card--featured reveal">
+          <h3 class="pricing-card__name">Гармония</h3>
+          <p class="pricing-card__price">7 900 ₽ <span>/ журнал</span></p>
+          <ul class="pricing-card__features" role="list">
+            <li>48 страниц</li>
+            <li>До 60 фотографий</li>
+            <li>2 варианта дизайна на выбор</li>
+            <li>Премиальная бумага 200 г/м²</li>
+            <li>Подарочная упаковка</li>
+            <li>Бесплатная доставка</li>
+          </ul>
+          <a href="#order" class="btn btn--primary" style="width:100%;">Выбрать</a>
+        </div>
+        <div class="pricing-card reveal">
+          <h3 class="pricing-card__name">Вечность</h3>
+          <p class="pricing-card__price">12 900 ₽ <span>/ журнал</span></p>
+          <ul class="pricing-card__features" role="list">
+            <li>72 страницы</li>
+            <li>До 100 фотографий</li>
+            <li>3 варианта дизайна + правки</li>
+            <li>Премиальная бумага 250 г/м²</li>
+            <li>Тиснение на обложке</li>
+            <li>Подарочная коробка + открытка</li>
+            <li>Экспресс-доставка</li>
+          </ul>
+          <a href="#order" class="btn btn--outline" style="width:100%;">Выбрать</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider" aria-hidden="true">
+    <span class="divider__line"></span>
+    <span class="divider__icon">♥</span>
+    <span class="divider__line"></span>
+  </div>
+
+  <!-- ========== TESTIMONIALS ========== -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">Отзывы</p>
+        <h2 class="section__title">Что говорят наши пары</h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">«Муж был в восторге! Журнал получился таким трогательным и красивым, что мы пересматриваем его каждый вечер. Спасибо за такой тёплый подарок.»</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">ЕМ</div>
+            <div>
+              <p class="testimonial-card__name">Екатерина М.</p>
+              <p class="testimonial-card__detail">Подарок на 3-ю годовщину</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">«Заказывала журнал к нашей годовщине. Дизайн превзошёл все ожидания — каждый разворот как произведение искусства. Качество печати — на высшем уровне.»</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">АК</div>
+            <div>
+              <p class="testimonial-card__name">Алина К.</p>
+              <p class="testimonial-card__detail">Подарок на 5-ю годовщину</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">★★★★★</div>
+          <p class="testimonial-card__text">«Это лучший подарок, который я когда-либо получала. Наша история, наши фото — всё собрано в одном месте. Плакала от счастья, пока листала.»</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">ОС</div>
+            <div>
+              <p class="testimonial-card__name">Ольга С.</p>
+              <p class="testimonial-card__detail">Подарок на 1-ю годовщину</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ORDER FORM ========== -->
+  <section class="section order" id="order">
+    <div class="container">
+      <div class="section__header reveal">
+        <p class="section__label">Заказать журнал</p>
+        <h2 class="section__title">Начните вашу историю</h2>
+      </div>
+      <div class="order__layout">
+        <div class="order__info reveal">
+          <h3>Как оформить заказ</h3>
+          <p>Заполните форму, и мы свяжемся с вами в течение 24 часов, чтобы обсудить детали и начать работу над вашим журналом.</p>
+          <ul class="order__steps" role="list">
+            <li><span>Заполните форму с контактными данными и выберите пакет</span></li>
+            <li><span>Мы свяжемся с вами для обсуждения деталей и сбора материалов</span></li>
+            <li><span>Отправьте фотографии и текст для журнала удобным способом</span></li>
+            <li><span>Утвердите дизайн-макет — мы внесём правки бесплатно</span></li>
+            <li><span>Получите готовый журнал курьером в подарочной упаковке</span></li>
+          </ul>
+        </div>
+        <div class="order__form reveal">
+          <form onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" name="name" placeholder="Как к вам обращаться?" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email@example.com">
+            </div>
+            <div class="form-group">
+              <label for="package">Пакет</label>
+              <select id="package" name="package">
+                <option value="tenderness">Нежность — 4 900 ₽</option>
+                <option value="harmony" selected>Гармония — 7 900 ₽</option>
+                <option value="eternity">Вечность — 12 900 ₽</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="occasion">Повод</label>
+              <select id="occasion" name="occasion">
+                <option value="anniversary">Годовщина</option>
+                <option value="wedding">Свадьба</option>
+                <option value="birthday">День рождения</option>
+                <option value="gift">Просто подарок</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Расскажите коротко вашу историю</label>
+              <textarea id="message" name="message" placeholder="Как вы познакомились? Что хотите видеть в журнале?"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" style="width:100%;">Отправить заявку</button>
+          </form>
+          <div id="form-success" style="display:none;text-align:center;padding:var(--space-8);">
+            <div style="font-size:48px;margin-bottom:var(--space-4);">♥</div>
+            <h3 style="font-family:var(--font-display);font-size:var(--text-xl);color:var(--color-text);margin-bottom:var(--space-3);">Заявка отправлена</h3>
+            <p style="color:var(--color-text-muted);font-size:var(--text-sm);">Мы свяжемся с вами в ближайшее время, чтобы обсудить вашу историю любви.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">Love Story Journal</p>
+      <ul class="footer__links" role="list">
+        <li><a href="#portfolio">Примеры</a></li>
+        <li><a href="#pricing">Тарифы</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#order">Заказать</a></li>
+      </ul>
+      <p class="footer__copy">© 2026 Love Story Journal. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
